@@ -256,5 +256,72 @@
 		<property name="optionalLinks" value="http://localhost:8080/acme-incubator/anonymous/notice/show?id=24,
 						http://localhost:8080/acme-incubator/anonymous/notice/show?id=25"/>
 	</bean>
-</beans>
 
+<!-- Entrepreneur -->
+	
+	<bean name="entrepreneur1UserAccount" class="acme.framework.entities.UserAccount">
+		<property name="username" value="entrepreneur"/>
+		<property name="password" value="entrepreneur"/>
+		<property name="enabled" value="true"/>
+		<property name="identity">	
+			<bean class="acme.datatypes.UserIdentity">
+				<property name="name" value="Entrepreneur"/>
+				<property name="surname" value="One"/>
+				<property name="email" value="entrepreneur1@acme.com"/>
+			</bean>
+		</property>
+		<property name="roles">
+			<list>
+
+				<ref bean="entrepreneur1Entrepreneur"/>
+				<ref bean="entrepreneur1Authenticated"/>
+			</list>
+		</property>
+	</bean>  
+	
+	 <bean name="entrepreneur1Entrepreneur" class="acme.entities.roles.Entrepreneur">
+		<property name="startupName" value="Entrepreneur 1, Inc"/>
+		<property name="sector" value="Sector 1"/>
+		<property name="qualificationRecord" value="Engenieering Career"/>
+		<property name="skillsRecord" value="Php"/>
+		<property name="userAccount" ref="entrepreneur1UserAccount"/>
+	</bean>
+	
+	<bean name="entrepreneur1Authenticated" class="acme.framework.entities.Authenticated">
+		<property name="userAccount" ref="entrepreneur1UserAccount"/>
+	</bean>
+	
+	
+	<!-- Investors -->
+	
+	<bean name="investor1UserAccount" class="acme.framework.entities.UserAccount">
+		<property name="username" value="investor"/>
+		<property name="password" value="investor"/>
+		<property name="enabled" value="true"/>
+		<property name="identity">	
+			<bean class="acme.datatypes.UserIdentity">
+				<property name="name" value="Investor"/>
+				<property name="surname" value="One"/>
+				<property name="email" value="investor1@acme.com"/>
+			</bean>
+		</property>
+		<property name="roles">
+			<list>
+
+				<ref bean="investor1Investor"/>
+				<ref bean="investor1Authenticated"/>
+			</list>
+		</property>
+	</bean>  
+	
+	 <bean name="investor1Investor" class="acme.entities.roles.Investor">
+		<property name="firmName" value="Investor 1, Inc"/>
+		<property name="sector" value="Sector 1"/>
+		<property name="profile" value="FrontEnd"/>
+		<property name="userAccount" ref="investor1UserAccount"/>
+	</bean>
+	
+	<bean name="investor1Authenticated" class="acme.framework.entities.Authenticated">
+		<property name="userAccount" ref="investor1UserAccount"/>
+	</bean>
+</beans>
