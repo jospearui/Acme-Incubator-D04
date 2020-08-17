@@ -324,4 +324,30 @@
 	<bean name="investor1Authenticated" class="acme.framework.entities.Authenticated">
 		<property name="userAccount" ref="investor1UserAccount"/>
 	</bean>
+	
+	<!-- Investment Rounds -->
+	<bean id="investmentRound01" class="acme.entities.investmentRounds.InvestmentRound">
+		<property name="ticker" value= "ART-20-000000"/>
+		<property name="creation" value= "2020/01/01 10:15"/>
+		<property name="round" value= "SEED"/>
+		<property name="title" value= "Title 01"/>
+		<property name="description" value= "Description investment rounds 01"/>
+		<property name="amount" value= "€ 1,000"/>
+		<property name="optionalLink"><null/></property>
+		<property name="finalMode" value= "false"/>		
+		<property name="entrepreneur" ref="entrepreneur1Entrepreneur"/>
+	</bean>
+	
+	<bean id="investmentRound02" class="acme.entities.investmentRounds.InvestmentRound">
+		<property name="ticker" value= "SCI-19-000001"/>
+		<property name="creation" value= "2019/01/01 14:59"/>
+		<property name="round" value= "ANGEL"/>
+		<property name="title" value= "Title 02"/>
+		<property name="description" value= "Description investment rounds 02"/>
+		<property name="amount" value= "€ 1,000"/>
+		<property name="optionalLink" value= "https://www.ejemplo02.com"/>
+		<property name="finalMode" value= "true"/>		
+		<property name="entrepreneur" ref="entrepreneur1Entrepreneur"/>
+	</bean>
+	
 </beans>
