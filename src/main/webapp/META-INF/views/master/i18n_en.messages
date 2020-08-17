@@ -45,6 +45,7 @@ master.menu.authenticated.challenge.list= Challenges
 master.menu.authenticated.inquiry.list= Inquiries
 master.menu.authenticated.overture.list = Overtures
 master.menu.authenticated.notice.list = Notices
+master.menu.authenticated.investmentRound.list = Investment Rounds
 
 # master.menu.administrator ###################################################
 
@@ -73,6 +74,10 @@ master.menu.provider.favourite-link = Favourite link
 
 master.menu.consumer = Consumer
 master.menu.consumer.favourite-link = Favourite link
+
+# master.menu.entrepreneur ##########################################################
+master.menu.entrepreneur = Entrepreneur
+master.menu.entrepreneur.investmentRound.list = Investor Rounds
 
 # master.menu.user-account ####################################################
 
