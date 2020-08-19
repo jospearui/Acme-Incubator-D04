@@ -6,4 +6,6 @@ authenticated.investmentRound.list.label.amount = Money amount
 authenticated.investmentRound.list.label.optionalLink = Optional link
 authenticated.investmentRound.list.label.ticker = Ticker
 	
+authenticated.investmentRound.form.label.activities = Work Programme
+
 authenticated.investmentRound.button.return= Return

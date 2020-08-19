@@ -350,4 +350,22 @@
 		<property name="entrepreneur" ref="entrepreneur1Entrepreneur"/>
 	</bean>
 	
+	<!-- Acitvities -->
+	
+	<bean id="activity01" class="acme.entities.activities.Activity">
+		<property name="title" value= "Act-1"/>
+		<property name="start" value= "2021/01/01 14:59"/>
+		<property name="end" value= "2021/06/06 14:59"/>
+		<property name="budget" value= "500 EUR"/>
+		<property name="investmentRound" ref="investmentRound02"/>
+	</bean>
+	
+	<bean id="activity02" class="acme.entities.activities.Activity">
+		<property name="title" value= "Act-2"/>
+		<property name="start" value= "2021/01/01 14:59"/>
+		<property name="end" value= "2021/06/06 14:59"/>
+		<property name="budget" value= "500 EUR"/>
+		<property name="investmentRound" ref="investmentRound02"/>
+	</bean>
+	
 </beans>
