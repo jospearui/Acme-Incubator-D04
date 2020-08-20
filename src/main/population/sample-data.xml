@@ -281,7 +281,7 @@
 	
 	 <bean name="entrepreneur1Entrepreneur" class="acme.entities.roles.Entrepreneur">
 		<property name="startupName" value="Entrepreneur 1, Inc"/>
-		<property name="sector" value="Sector 1"/>
+		<property name="sector" value="ARTS"/>
 		<property name="qualificationRecord" value="Engenieering Career"/>
 		<property name="skillsRecord" value="Php"/>
 		<property name="userAccount" ref="entrepreneur1UserAccount"/>
@@ -316,7 +316,7 @@
 	
 	 <bean name="investor1Investor" class="acme.entities.roles.Investor">
 		<property name="firmName" value="Investor 1, Inc"/>
-		<property name="sector" value="Sector 1"/>
+		<property name="sector" value="ARTS"/>
 		<property name="profile" value="FrontEnd"/>
 		<property name="userAccount" ref="investor1UserAccount"/>
 	</bean>

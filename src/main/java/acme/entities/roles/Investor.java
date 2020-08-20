@@ -3,7 +3,9 @@ package acme.entities.roles;
 
 import javax.persistence.Entity;
 import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.NotNull;
 
+import acme.entities.technologyRecords.TipoSector;
 import acme.framework.entities.UserRole;
 import lombok.Getter;
 import lombok.Setter;
@@ -18,8 +20,8 @@ public class Investor extends UserRole {
 	@NotBlank
 	private String				firmName;
 
-	@NotBlank
-	private String				sector;
+	@NotNull
+	private TipoSector			sector;
 
 	@NotBlank
 	private String				profile;
