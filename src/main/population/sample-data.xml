@@ -368,4 +368,14 @@
 		<property name="investmentRound" ref="investmentRound02"/>
 	</bean>
 	
+	<!-- Applications -->
+	<bean id="Application01" class="acme.entities.applications.Application">
+		<property name="ticker" value= "SEC-20-123456"/>
+		<property name="creationMoment" value= "2020/07/05 14:59"/>
+		<property name="statement" value= "Primera aplicación"/>
+		<property name="moneyOffer" value= "3000 EUR"/>
+		<property name="investor" ref= "investor1Investor"/>
+		<property name="iRound" ref= "investmentRound02"/>
+	</bean>
+	
 </beans>
