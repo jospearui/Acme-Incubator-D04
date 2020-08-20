@@ -425,7 +425,7 @@ has v</panel_attributes>
 Entrepreneur
 --
 + startupName: String{NotBlank}			
-+ sector: String {NotBlank}			
++ sector: TipoSector {NotNull}			
 + qualificationRecord: String {NotBlank}	
 + skillsRecords: String {NotBlank}</panel_attributes>
     <additional_attributes/>
@@ -442,7 +442,7 @@ Entrepreneur
 Investor
 --
 + firmName: String{NotBlank}			
-+ sector: String {NotBlank}			
++ sector: TipoSector {NotNull}			
 + profile: String {NotBlank}	
 </panel_attributes>
     <additional_attributes/>
