@@ -339,7 +339,7 @@
 	</bean>
 	
 	<bean id="investmentRound02" class="acme.entities.investmentRounds.InvestmentRound">
-		<property name="ticker" value= "SCI-19-000001"/>
+		<property name="ticker" value= "ART-19-000001"/>
 		<property name="creation" value= "2019/01/01 14:59"/>
 		<property name="round" value= "ANGEL"/>
 		<property name="title" value= "Title 02"/>
@@ -370,7 +370,7 @@
 	
 	<!-- Applications -->
 	<bean id="Application01" class="acme.entities.applications.Application">
-		<property name="ticker" value= "SEC-20-123456"/>
+		<property name="ticker" value= "ART-20-123456"/>
 		<property name="creationMoment" value= "2020/07/05 14:59"/>
 		<property name="statement" value= "Primera aplicación"/>
 		<property name="moneyOffer" value= "3000 EUR"/>
