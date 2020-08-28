@@ -6,8 +6,8 @@
 <acme:form readonly="true">
 	<acme:form-textbox code="entrepreneur.activity.form.label.title" path="title"/>
 	<acme:form-moment code="entrepreneur.activity.form.label.start" path="start"/>
-	<acme:form-textarea code="entrepreneur.activity.form.label.end" path="end"/>
-	<acme:form-textbox code="entrepreneur.activity.form.label.budget" path="budget"/>
+	<acme:form-moment code="entrepreneur.activity.form.label.end" path="end"/>
+	<acme:form-money code="entrepreneur.activity.form.label.budget" path="budget"/>
 	
 	
 	<acme:form-return code="entrepreneur.activity.form.button.return"/>
