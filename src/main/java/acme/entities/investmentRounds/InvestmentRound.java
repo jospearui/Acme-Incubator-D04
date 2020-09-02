@@ -13,6 +13,8 @@ import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.PastOrPresent;
 
+import org.hibernate.validator.constraints.URL;
+
 import acme.entities.roles.Entrepreneur;
 import acme.framework.datatypes.Money;
 import acme.framework.entities.DomainEntity;
@@ -45,6 +47,7 @@ public class InvestmentRound extends DomainEntity {
 	@Valid
 	private Money				amount;
 
+	@URL
 	private String				optionalLink;
 
 	private boolean				finalMode;

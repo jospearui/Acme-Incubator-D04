@@ -21,12 +21,7 @@
 	<acme:form-moment code="entrepreneur.investmentRound.list.label.creation" path="creation" readonly="true"/>
 	<acme:form-money code="entrepreneur.investmentRound.list.label.amount" path="amount" readonly="true"/>
 	<acme:form-textbox code="entrepreneur.investmentRound.list.label.ticker" path="ticker" readonly="true"/>
-	<jstl:if test="${command != 'show'}">
 	<acme:form-url code="entrepreneur.investmentRound.list.label.optionalLink" path="optionalLink" readonly="true"/>
-	</jstl:if>
-	<jstl:if test="${command == 'show'}">
-	<acme:form-textbox code="entrepreneur.investmentRound.list.label.optionalLink" path="optionalLink" readonly="true"/>
-	</jstl:if>
 	
 	<acme:form-submit method="get" code="entrepreneur.investmentRound.form.label.activities" action="/entrepreneur/activity/list-from-investment?investmentRoundId=${id}"/>
 	
